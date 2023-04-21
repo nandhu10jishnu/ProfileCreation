@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Simple web Development Template</title>
+
+<style>
+        html{
+            scroll-behavior: smooth;
+            scroll-padding-top: var(--scroll-padding,50px);
+        }
+       
+		* {
+			margin: 0;
+			padding: 0;
+		}
+        header{
+            position: sticky;
+			top: 0;
+        }
+        /* main
+        {
+            margin-top:20px;
+        } */
+
+		.navbar-background {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: black;
+			background-blend-mode: darken;
+			background-size: cover;
+			cursor: pointer;
+		}
+
+		.background {
+			background: black;
+			background-blend-mode: darken;
+			background-size: cover;
+		}
+
+		.nav-list {
+			width: 70%;
+			display: flex;
+			align-items: center;
+		}
+
+		.logo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.logo img {
+			width: 180px;
+			border-radius: 50px;
+		}
+
+		.nav-list li {
+			list-style: none;
+			padding: 26px 30px;
+		}
+
+		.nav-list li a {
+			text-decoration: none;
+			color: white;
+		}
+
+		.nav-list li a:hover {
+			color: grey;
+		}
+
+
+		.text-big {
+			font-family: 'Piazzolla', serif;
+			font-weight: bold;
+			font-size: 35px;
+		}
+
+		.text-small {
+			font-size: 18px;
+		}
+		.container{
+			max-width:1200px;
+			margin-inline:auto;
+          
+		}
+        section{
+			display: grid;
+			place-content: center;
+            height: 100vh;
+        }
+		.first-section{
+			background-color: #66ffff;
+		}
+        .fourth-section{
+            background-color: #0099ff;
+        }
+		.second-section{
+			background-color: green;
+		}
+		.text-footer {
+			text-align: center;
+			padding: 30px 0;
+			font-family: 'Ubuntu', sans-serif;
+			display: flex;
+			justify-content: center;
+			color: white;
+		}
+        labeldiv{
+            padding: 15px;
+        }
+        input{
+            padding: 10px;
+        }
+       
+        .imagediv{
+              float: left;
+        }
+div.parent{ 
+    
+    display:table;
+    padding:5px; 
+    width:100%;
+    margin:5px 0; /* you can change/remove margin */
+}
+div.text{ 
+    
+    vertical-align:middle;
+    display:table-cell;
+    text-align:justify;
+}
+div.parent .img{
+    vertical-align:middle;
+    display:table-cell;
+    padding-right:5px;
+    width:400px; /* you can change width */
+}
+div.img img{ 
+    width:100%;
+    height:400px; /* you can change height */
+    vertical-align:middle;
+}
+.mybox{
+    border: solid black 1px;
+    width: 1000px;
+    height: 50px;
+    text-align: center;
+    padding: 100px;
+    font-size: 24px;
+    text-decoration: solid;
+    margin-top: 150px;
+}
+.site-footer {
+  background-color: #838383;
+	text-align: center;
+	margin: 10px 0;
+	padding: 10px 0;
+}
+
+#social-wrapper {
+	text-align: center;
+}
+
+/*Social Media Icons*/
+.social-wrapper {
+	text-align: center;
+}
+
+.social-wrapper ul li {
+	display: inline;
+	margin: 0 5px;
+}
+
+.twitter-icon,
+.facebook-icon,
+.instagram-icon,
+.linkedin-icon,
+.googleplus-icon,
+.youtube-icon,
+.foursquare-icon{
+	margin-top: .625em;
+	width: 40px;
+	height: 40px;
+	opacity: .6;
+	filter: alpha(opacity=60); /* For IE8 and earlier */
+  border-radius: 25px;
+}
+
+.twitter-icon:hover,
+.facebook-icon:hover,
+.instagram-icon:hover,
+.linkedin-icon:hover,
+.googleplus-icon:hover,
+.youtube-icon:hover,
+.foursquare-icon:hover {
+	opacity: 1.0;
+	filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+.footer-nav p {
+	text-align: center;
+}
+	</style> 
+    <!-- <style href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"></style> -->
+    <!-- <style href="bootstrap.min.css"></style> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar-background">
+            <ul class="nav-list">
+                <div class="logo">
+                <h2>Title</h2>
+                     <!-- <img src= "logo.png"> -->
+                </div>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+	
+    <main>
+        <section class="first-section" id="home">
+            <div class="container">
+                <div class="firstHalf">
+                    <!-- <h1 class="text-big" >Web Technology</h1> -->
+                    <div class=" mybox" >
+                        <p>Hello Everyone!</p>
+                      </div>
+    
+                </div>
+            </div>
+        </section>
+        <section class="fifth-section" id="about">
+            <div class="container">
+                <div class="firstHalf">
+                    <h1 class="text-big" >
+                       About
+                    </h1>
+                        <div class="parent">
+                            <div class="img">
+                              
+                                <img src="img/a.jpg" width="200px" height="300px">
+                            </div>
+                            <div class="text">
+                               
+                                Seeking a challenging position in a reputable organization to expand and utilize my learning, skills and knowledge. Possess excellent communication skills and have an
+                                 eye for detail. Flexible to work in any environment as required.
+                            </div>
+                            </div>
+                </div>
+            </div>
+        </section>
+        <section class="second-section" id="skills">
+            <div class="container">
+                
+                <div class="firstHalf">
+                   <div style="width: 1000px;"> <h1 class="text-big" >
+                       Skills
+                    </h1>
+                </div>
+                    <!-- <div>
+                        <div class="d-flex flex-column parent" style="padding-left: 250px;">
+                            <ul>
+                            <li class="d-flex align-items-center py-2">
+                                <span class="bullet me-5"></span> Item 1
+                            </li>
+                            <li class="d-flex align-items-center py-2">
+                                <span class="bullet me-5"></span> Item 2
+                            </li>
+                            <li class="d-flex align-items-center py-2">
+                                <span class="bullet me-5"></span> Item 3
+                            </li>
+                            <li class="d-flex align-items-center py-2">
+                                <span class="bullet me-5"></span> Item 4
+                            </li>
+                            <li class="d-flex align-items-center py-2">
+                                <span class="bullet me-5"></span> Item 5
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                -->
+                <div class="parent">
+                    
+                    <div class="text">
+                        <div class="d-flex flex-column parent" style="padding-left: 250px;">
+                            <ul>
+                            <li class="d-flex align-items-center py-2">
+                                <span class="bullet me-5"></span> Communication
+                            </li>
+                            <li class="d-flex align-items-center py-2">
+                                <span class="bullet me-5"></span> Time Management
+                            </li>
+                            <li class="d-flex align-items-center py-2">
+                                <span class="bullet me-5"></span> Dancing
+                            </li>
+                            <li class="d-flex align-items-center py-2">
+                                <span class="bullet me-5"></span> Singing
+                            </li>
+                            <li class="d-flex align-items-center py-2">
+                                <span class="bullet me-5"></span> Basketball
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="img">
+                      
+                        <img src="img/q.jpg" width="200px" height="300px">
+                    </div>
+                    </div>
+            </div>
+            </div>
+        </section>
+        <section class="fourth-section" id="education">
+            <div class="container">
+                <div class="firstHalf">
+                    <h1 class="text-big" >
+                       Education
+                    </h1>
+                   
+   
+                </div>
+                <div class = "ede">
+                    <div class="container" style="margin-top:1em;">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <ul class="list-group">
+                                   
+                                    <li class="list-group-item">College
+                                        <ul class="list-group">
+                                            <li class="list-group-item">All saints</li>
+                                            <li class="list-group-item">2020</li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item">School
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Holly Angels</li>
+                                            <li class="list-group-item">2015</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+                
+            </div>
+        </section>
+        <section class="fifth-section"  id="contact">
+            <div class="container">
+                <h1 class="sectionTag text-big">Contact</h1>
+                </br>
+               
+                <div >
+                    <div class="labeldiv">  <label ><b>Name</b></label></div>
+                  
+                    <input type="text" placeholder="Enter Name" name="email" id="email" required>
+                </div>
+                  <div >
+                    <div class="labeldiv"><label ><b>Email</b></label></div>
+                    
+                    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                </div>
+                <div >
+                    <div class="labeldiv"> <label ><b>Phone</b></label></div>
+                   
+                    <input type="text" placeholder="Enter Number" name="email" id="email" required>
+                </div>
+                <div >
+                    <div ><label ><b>Message</b></label></div>
+                    
+                    <textarea id="w3review" placeholder="Enter Message" name="w3review" rows="4" cols="50"></textarea>
+                </div>
+                <div >
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                
+                </div>
+            </div>
+    
+        </section>
+        
+       
+    </main>
+	
+	<footer class="background">
+        <div class="social-wrapper">
+            <ul>
+              <li>
+                <a href="#" target="_blank">
+                  <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png" alt="Twitter Logo" class="twitter-icon"></a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <img src="https://www.mchenryvillage.com/images/instagram-icon.png" alt="Instagram Logo" class="instagram-icon"></a>
+              </li>
+              
+              <li>
+                <a href="#" target="_blank">
+                  <img src="http://www.iconarchive.com/download/i54037/danleech/simple/facebook.ico" alt="Facebook Logo" class="facebook-icon"></a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <img src="http://icons.iconarchive.com/icons/marcus-roberto/google-play/256/Google-plus-icon.png" alt="Googleplus Logo" class="googleplus-icon"></a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <img src="https://lh3.googleusercontent.com/j_RwVcM9d47aBDW5DS1VkdxUYCkDUCB6wZglv4x-9SmsxO0VaFs7Csh-FmKRCWz9r_Ef=w170" alt="Youtube Logo" class="youtube-icon"></a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <img src="http://www.iconarchive.com/download/i94258/designbolts/vector-foursquare/Foursquare-2.ico" alt="Foursquare Logo" class="foursquare-icon"></a>
+              </li>
+            </ul>
+          </div>
+        
+        
+		<p class="text-footer">
+			Copyright ©-All rights are reserved
+		</p>
+
+
+	</footer>
+	
+</body>
+<script src="index.js"></script>
+</html>
